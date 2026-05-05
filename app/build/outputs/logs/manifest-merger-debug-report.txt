@@ -4,6 +4,8 @@ ADDED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\m
 INJECTED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\AndroidManifest.xml:2:1-21:12
 INJECTED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\AndroidManifest.xml:2:1-21:12
 INJECTED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\AndroidManifest.xml:2:1-21:12
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\21cdc0097cf0420a974d1d692fe7d744\transformed\room-runtime-2.6.1\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\5e6cc1ff0b052f076e8092c1c88e7e58\transformed\jetified-room-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.material3:material3:1.1.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\d673dd3320e085a32f87fe2c8650822b\transformed\jetified-material3-1.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.8.2] C:\Users\tintu\.gradle\caches\8.10.2\transforms\5a0c901cc071317cc9bcebd1c3c287df\transformed\jetified-activity-1.8.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\tintu\.gradle\caches\8.10.2\transforms\a95914d40374b551bcabda8c4c1cb75b\transformed\jetified-activity-ktx-1.8.2\AndroidManifest.xml:2:1-7:12
@@ -40,12 +42,14 @@ MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\tintu\.gradle\caches\8.1
 MERGED from [androidx.core:core:1.12.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\6d77ff9f9b44044f268df54e81d2636c\transformed\core-1.12.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\7930e7ee23da88ad61de070c699d562a\transformed\jetified-customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\571cb33b7fb3bd3947d8534e87a4ecfd\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\3b619e94e641b0845efbfa1fa4baf6a9\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\7870f9ced89e745d686b1bf71505f18b\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\71acbd81358a73d92088f73902ac8e84\transformed\sqlite-2.4.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\366799c70e5d24db0507012dd560cad0\transformed\jetified-runtime-saveable-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.runtime:runtime-android:1.5.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\2d523a06c873a7081ac8c2cea37ae016\transformed\jetified-runtime-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\3b619e94e641b0845efbfa1fa4baf6a9\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\2e6e014091c77a6ed9e6b2cd0677f21d\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\1d71e98747b2275054e5b256b66e21d3\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\050d9200338b2156e2fd453f53369a86\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\2e6e014091c77a6ed9e6b2cd0677f21d\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\5f2c47f8f83c369132a9289f38c6a506\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\4710bd1f9bf22d60247569a4fd375475\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\09ccf2c895a799f89fccbccaba044f82\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -61,6 +65,8 @@ MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\tintu\.gradle\caches\8.10.
 application
 ADDED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\AndroidManifest.xml:5:5-19:19
 INJECTED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\21cdc0097cf0420a974d1d692fe7d744\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\21cdc0097cf0420a974d1d692fe7d744\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\b625e657495ba8f65b54910194a604b8\transformed\jetified-ui-test-manifest-1.5.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\b625e657495ba8f65b54910194a604b8\transformed\jetified-ui-test-manifest-1.5.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\d28c139378f36190b7e34c0ea56eebe2\transformed\jetified-ui-tooling-release\AndroidManifest.xml:22:5-26:19
@@ -111,6 +117,10 @@ uses-sdk
 INJECTED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\AndroidManifest.xml
 INJECTED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\AndroidManifest.xml
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\21cdc0097cf0420a974d1d692fe7d744\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\21cdc0097cf0420a974d1d692fe7d744\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\5e6cc1ff0b052f076e8092c1c88e7e58\transformed\jetified-room-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\5e6cc1ff0b052f076e8092c1c88e7e58\transformed\jetified-room-ktx-2.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.material3:material3:1.1.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\d673dd3320e085a32f87fe2c8650822b\transformed\jetified-material3-1.1.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.material3:material3:1.1.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\d673dd3320e085a32f87fe2c8650822b\transformed\jetified-material3-1.1.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.8.2] C:\Users\tintu\.gradle\caches\8.10.2\transforms\5a0c901cc071317cc9bcebd1c3c287df\transformed\jetified-activity-1.8.2\AndroidManifest.xml:20:5-44
@@ -183,18 +193,22 @@ MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\tin
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\7930e7ee23da88ad61de070c699d562a\transformed\jetified-customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
 MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\571cb33b7fb3bd3947d8534e87a4ecfd\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\571cb33b7fb3bd3947d8534e87a4ecfd\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\3b619e94e641b0845efbfa1fa4baf6a9\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\3b619e94e641b0845efbfa1fa4baf6a9\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\7870f9ced89e745d686b1bf71505f18b\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\7870f9ced89e745d686b1bf71505f18b\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\71acbd81358a73d92088f73902ac8e84\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\71acbd81358a73d92088f73902ac8e84\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\366799c70e5d24db0507012dd560cad0\transformed\jetified-runtime-saveable-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\366799c70e5d24db0507012dd560cad0\transformed\jetified-runtime-saveable-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.runtime:runtime-android:1.5.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\2d523a06c873a7081ac8c2cea37ae016\transformed\jetified-runtime-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.runtime:runtime-android:1.5.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\2d523a06c873a7081ac8c2cea37ae016\transformed\jetified-runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\3b619e94e641b0845efbfa1fa4baf6a9\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\3b619e94e641b0845efbfa1fa4baf6a9\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\2e6e014091c77a6ed9e6b2cd0677f21d\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\2e6e014091c77a6ed9e6b2cd0677f21d\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\1d71e98747b2275054e5b256b66e21d3\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\1d71e98747b2275054e5b256b66e21d3\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\050d9200338b2156e2fd453f53369a86\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\050d9200338b2156e2fd453f53369a86\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\2e6e014091c77a6ed9e6b2cd0677f21d\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\2e6e014091c77a6ed9e6b2cd0677f21d\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\5f2c47f8f83c369132a9289f38c6a506\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\5f2c47f8f83c369132a9289f38c6a506\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\4710bd1f9bf22d60247569a4fd375475\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
@@ -205,6 +219,16 @@ MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\tintu\.gradle\caches\8.10.
 		INJECTED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\21cdc0097cf0420a974d1d692fe7d744\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\21cdc0097cf0420a974d1d692fe7d744\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\21cdc0097cf0420a974d1d692fe7d744\transformed\room-runtime-2.6.1\AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\21cdc0097cf0420a974d1d692fe7d744\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\tintu\.gradle\caches\8.10.2\transforms\21cdc0097cf0420a974d1d692fe7d744\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
 activity#androidx.activity.ComponentActivity
 ADDED from [androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\tintu\.gradle\caches\8.10.2\transforms\b625e657495ba8f65b54910194a604b8\transformed\jetified-ui-test-manifest-1.5.0\AndroidManifest.xml:23:9-25:39
 	android:exported

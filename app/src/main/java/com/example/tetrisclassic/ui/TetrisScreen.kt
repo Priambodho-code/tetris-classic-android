@@ -1,5 +1,7 @@
 package com.example.tetrisclassic.ui
 
+import androidx.compose.animation.core.animateOffsetAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -8,6 +10,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
@@ -53,6 +56,7 @@ fun TetrisScreen(viewModel: TetrisViewModel = viewModel()) {
 
             // Sidebar
             Column(modifier = Modifier.weight(1f)) {
+                InfoSection("HI-SCORE", state.highScore.toString())
                 InfoSection("SCORE", state.score.toString())
                 InfoSection("LEVEL", state.level.toString())
                 InfoSection("LINES", state.linesCleared.toString())
@@ -94,6 +98,32 @@ fun TetrisScreen(viewModel: TetrisViewModel = viewModel()) {
                 }
             )
         }
+
+        if (state.isWaitingToStart) {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(GB_DARK.copy(alpha = 0.8f)),
+                contentAlignment = Alignment.Center
+            ) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(
+                        "TETRIS",
+                        color = GB_HIGHLIGHT,
+                        fontSize = 48.sp,
+                        style = MaterialTheme.typography.headlineLarge
+                    )
+                    Spacer(modifier = Modifier.height(32.dp))
+                    Button(
+                        onClick = { viewModel.startGame() },
+                        colors = ButtonDefaults.buttonColors(containerColor = GB_HIGHLIGHT),
+                        modifier = Modifier.scale(1.5f)
+                    ) {
+                        Text("START GAME", color = GB_DARK)
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -107,36 +137,78 @@ fun InfoSection(label: String, value: String) {
 
 @Composable
 fun GameBoard(state: com.example.tetrisclassic.model.GameState) {
-    Canvas(modifier = Modifier.fillMaxSize()) {
-        val blockSize = size.width / 10
+    BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+        val blockSize = maxWidth / 10
+        val blockSizePx = with(androidx.compose.ui.platform.LocalDensity.current) { blockSize.toPx() }
 
-        // Draw Board
-        state.board.forEachIndexed { y, row ->
-            row.forEachIndexed { x, type ->
-                if (type != null) {
-                    drawRect(
-                        color = GB_DARK,
-                        topLeft = Offset(x * blockSize, y * blockSize),
-                        size = Size(blockSize - 1, blockSize - 1)
-                    )
+        // Animated Position
+        val animatedOffset by animateOffsetAsState(
+            targetValue = Offset(state.piecePosition.x.toFloat(), state.piecePosition.y.toFloat()),
+            animationSpec = tween(durationMillis = 60),
+            label = "PieceAnimation"
+        )
+
+        Canvas(modifier = Modifier.fillMaxSize()) {
+            // Draw Board
+            state.board.forEachIndexed { y, row ->
+                row.forEachIndexed { x, type ->
+                    if (type != null) {
+                        drawRect(
+                            color = GB_DARK,
+                            topLeft = Offset(x * blockSizePx, y * blockSizePx),
+                            size = Size(blockSizePx - 1, blockSizePx - 1)
+                        )
+                    }
+                }
+            }
+
+            // Draw Ghost Piece (Bayangan)
+            state.currentPiece?.let { piece ->
+                var ghostY = state.piecePosition.y
+                while (isValidGhostMove(piece, state.piecePosition.x, ghostY + 1, state.board)) {
+                    ghostY++
+                }
+
+                piece.shape.forEach { block ->
+                    val x = state.piecePosition.x + block.x
+                    val y = ghostY + block.y
+                    if (y >= 0) {
+                        drawRect(
+                            color = GB_DARK,
+                            topLeft = Offset(x * blockSizePx, y * blockSizePx),
+                            size = Size(blockSizePx - 1, blockSizePx - 1),
+                            alpha = 0.2f // Transparan
+                        )
+                    }
+                }
+
+                // Draw Current Piece (Animated)
+                piece.shape.forEach { block ->
+                    val x = animatedOffset.x + block.x
+                    val y = animatedOffset.y + block.y
+                    if (y >= 0) {
+                        drawRect(
+                            color = GB_DARK,
+                            topLeft = Offset(x * blockSizePx, y * blockSizePx),
+                            size = Size(blockSizePx - 1, blockSizePx - 1)
+                        )
+                    }
                 }
             }
         }
+    }
+}
 
-        // Draw Current Piece
-        state.currentPiece?.let { piece ->
-            piece.shape.forEach { block ->
-                val x = state.piecePosition.x + block.x
-                val y = state.piecePosition.y + block.y
-                if (y >= 0) {
-                    drawRect(
-                        color = GB_DARK,
-                        topLeft = Offset(x * blockSize, y * blockSize),
-                        size = Size(blockSize - 1, blockSize - 1)
-                    )
-                }
-            }
-        }
+fun isValidGhostMove(
+    piece: com.example.tetrisclassic.model.Tetromino,
+    x: Int,
+    y: Int,
+    board: List<List<com.example.tetrisclassic.model.TetrominoType?>>
+): Boolean {
+    return piece.shape.all { block ->
+        val nx = x + block.x
+        val ny = y + block.y
+        nx in 0..9 && ny < 20 && (ny < 0 || board[ny][nx] == null)
     }
 }
 

@@ -8,6 +8,8 @@ data class GameState(
     val score: Int = 0,
     val level: Int = 1,
     val linesCleared: Int = 0,
+    val highScore: Int = 0,
     val isGameOver: Boolean = false,
-    val isPaused: Boolean = false
+    val isPaused: Boolean = false,
+    val isWaitingToStart: Boolean = true
 )

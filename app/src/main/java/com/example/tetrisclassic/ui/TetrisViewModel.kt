@@ -1,7 +1,10 @@
 package com.example.tetrisclassic.ui
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.tetrisclassic.data.AppDatabase
+import com.example.tetrisclassic.data.HighScore
 import com.example.tetrisclassic.model.GameState
 import com.example.tetrisclassic.model.Position
 import com.example.tetrisclassic.model.Tetromino
@@ -13,28 +16,46 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-
 import kotlin.math.pow
 
-class TetrisViewModel : ViewModel() {
+class TetrisViewModel(application: Application) : AndroidViewModel(application) {
     private val _gameState = MutableStateFlow(GameState())
     val gameState: StateFlow<GameState> = _gameState.asStateFlow()
+
+    private val database = AppDatabase.getDatabase(application)
+    private val highScoreDao = database.highScoreDao()
+    private val soundManager = SoundManager()
 
     private var gameJob: Job? = null
 
     init {
-        startGame()
+        viewModelScope.launch {
+            highScoreDao.getHighestScore().collect { hs ->
+                _gameState.update { it.copy(highScore = hs?.score ?: 0) }
+            }
+        }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        soundManager.release()
     }
 
     fun startGame() {
-        _gameState.value = GameState(currentPiece = Tetromino.create(TetrominoType.entries.random()))
+        _gameState.update {
+            GameState(
+                currentPiece = Tetromino.create(TetrominoType.entries.random()),
+                isWaitingToStart = false,
+                highScore = it.highScore
+            )
+        }
         resumeGame()
     }
 
     fun resumeGame() {
         gameJob?.cancel()
         gameJob = viewModelScope.launch {
-            while (!_gameState.value.isGameOver && !_gameState.value.isPaused) {
+            while (!_gameState.value.isGameOver && !_gameState.value.isPaused && !_gameState.value.isWaitingToStart) {
                 delay(getDropDelay())
                 moveDown()
             }
@@ -50,8 +71,14 @@ class TetrisViewModel : ViewModel() {
         return (1000 * 0.8.pow(_gameState.value.level - 1)).toLong().coerceAtLeast(100)
     }
 
-    fun moveLeft() = move(Position(-1, 0))
-    fun moveRight() = move(Position(1, 0))
+    fun moveLeft() {
+        if (move(Position(-1, 0))) soundManager.playMoveSound()
+    }
+
+    fun moveRight() {
+        if (move(Position(1, 0))) soundManager.playMoveSound()
+    }
+
     fun moveDown() = move(Position(0, 1))
 
     fun rotate() {
@@ -59,12 +86,13 @@ class TetrisViewModel : ViewModel() {
         val rotatedPiece = currentPiece.rotate()
         if (isValidMove(rotatedPiece, _gameState.value.piecePosition)) {
             _gameState.update { it.copy(currentPiece = rotatedPiece) }
+            soundManager.playRotateSound()
         }
     }
 
     private fun move(offset: Position): Boolean {
         val currentState = _gameState.value
-        if (currentState.isGameOver || currentState.isPaused) return false
+        if (currentState.isGameOver || currentState.isPaused || currentState.isWaitingToStart) return false
 
         val newPosition = Position(
             currentState.piecePosition.x + offset.x,
@@ -106,6 +134,8 @@ class TetrisViewModel : ViewModel() {
         }
 
         val (clearedBoard, linesCleared) = clearLines(newBoard)
+        if (linesCleared > 0) soundManager.playLineClearSound()
+        
         val newLinesTotal = currentState.linesCleared + linesCleared
         val newLevel = (newLinesTotal / 10) + 1
         val newScore = currentState.score + calculateScore(linesCleared, currentState.level)
@@ -114,7 +144,9 @@ class TetrisViewModel : ViewModel() {
         val spawnPosition = Position(4, 0)
 
         if (!isValidMove(nextPiece, spawnPosition)) {
-            _gameState.update { it.copy(board = clearedBoard, isGameOver = true) }
+            _gameState.update { it.copy(board = clearedBoard, score = newScore, isGameOver = true) }
+            soundManager.playGameOverSound()
+            saveHighScore(newScore)
         } else {
             _gameState.update {
                 it.copy(
@@ -126,6 +158,14 @@ class TetrisViewModel : ViewModel() {
                     linesCleared = newLinesTotal,
                     level = newLevel,
                 )
+            }
+        }
+    }
+
+    private fun saveHighScore(score: Int) {
+        viewModelScope.launch {
+            if (score > _gameState.value.highScore) {
+                highScoreDao.insert(HighScore(score = score))
             }
         }
     }

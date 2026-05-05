@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tetrisclassic.app-mergeDebugResources-43:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.example.tetrisclassic.app-mergeDebugResources-47:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tintu\\.gradle\\caches\\8.10.2\\transforms\\da8ee43d20ae59ff308b7264e9a8fffd\\transformed\\jetified-ui-release\\res\\values-en-rIN\\values-en-rIN.xml",

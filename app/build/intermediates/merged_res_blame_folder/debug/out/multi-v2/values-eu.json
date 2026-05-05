@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tetrisclassic.app-mergeDebugResources-43:/values-eu/values-eu.xml",
+            "outputFile": "com.example.tetrisclassic.app-mergeDebugResources-47:/values-eu/values-eu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tintu\\.gradle\\caches\\8.10.2\\transforms\\6d77ff9f9b44044f268df54e81d2636c\\transformed\\core-1.12.0\\res\\values-eu\\values-eu.xml",
