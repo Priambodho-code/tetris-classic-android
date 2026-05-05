@@ -1,0 +1,47 @@
+com.example.tetrisclassic.app-jetified-lifecycle-viewmodel-compose-2.7.0-0 C:\Users\tintu\.gradle\caches\8.10.2\transforms\0f0e8c293b00c9e1eccbb1e8ea02e23a\transformed\jetified-lifecycle-viewmodel-compose-2.7.0\res
+com.example.tetrisclassic.app-jetified-ui-tooling-preview-release-1 C:\Users\tintu\.gradle\caches\8.10.2\transforms\1c3d08766bf3a6d9087aecb2fae27b17\transformed\jetified-ui-tooling-preview-release\res
+com.example.tetrisclassic.app-lifecycle-viewmodel-2.7.0-2 C:\Users\tintu\.gradle\caches\8.10.2\transforms\1c5439c0d54215f800b69bce4ecd87c5\transformed\lifecycle-viewmodel-2.7.0\res
+com.example.tetrisclassic.app-jetified-foundation-layout-release-3 C:\Users\tintu\.gradle\caches\8.10.2\transforms\2b2b35c0d000cc3bcc25a1c197bed27a\transformed\jetified-foundation-layout-release\res
+com.example.tetrisclassic.app-jetified-runtime-release-4 C:\Users\tintu\.gradle\caches\8.10.2\transforms\2d523a06c873a7081ac8c2cea37ae016\transformed\jetified-runtime-release\res
+com.example.tetrisclassic.app-core-runtime-2.2.0-5 C:\Users\tintu\.gradle\caches\8.10.2\transforms\2e6e014091c77a6ed9e6b2cd0677f21d\transformed\core-runtime-2.2.0\res
+com.example.tetrisclassic.app-jetified-runtime-saveable-release-6 C:\Users\tintu\.gradle\caches\8.10.2\transforms\366799c70e5d24db0507012dd560cad0\transformed\jetified-runtime-saveable-release\res
+com.example.tetrisclassic.app-jetified-foundation-release-7 C:\Users\tintu\.gradle\caches\8.10.2\transforms\37ac2f83ff89783bf4fefd68a0580f13\transformed\jetified-foundation-release\res
+com.example.tetrisclassic.app-jetified-annotation-experimental-1.3.0-8 C:\Users\tintu\.gradle\caches\8.10.2\transforms\3b619e94e641b0845efbfa1fa4baf6a9\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.tetrisclassic.app-jetified-ui-util-release-9 C:\Users\tintu\.gradle\caches\8.10.2\transforms\3da39aba4c879c0206a7ef9a58b4a266\transformed\jetified-ui-util-release\res
+com.example.tetrisclassic.app-jetified-animation-release-10 C:\Users\tintu\.gradle\caches\8.10.2\transforms\41c9d7cf4d0340ea9cbf43b3dbd2cd64\transformed\jetified-animation-release\res
+com.example.tetrisclassic.app-jetified-startup-runtime-1.1.1-11 C:\Users\tintu\.gradle\caches\8.10.2\transforms\4710bd1f9bf22d60247569a4fd375475\transformed\jetified-startup-runtime-1.1.1\res
+com.example.tetrisclassic.app-jetified-lifecycle-process-2.7.0-12 C:\Users\tintu\.gradle\caches\8.10.2\transforms\478d9b81bc227fddb8a12af1d4620ed2\transformed\jetified-lifecycle-process-2.7.0\res
+com.example.tetrisclassic.app-jetified-material-ripple-release-13 C:\Users\tintu\.gradle\caches\8.10.2\transforms\4df05dd730bdb7748f0f14d013656aa9\transformed\jetified-material-ripple-release\res
+com.example.tetrisclassic.app-lifecycle-livedata-core-2.7.0-14 C:\Users\tintu\.gradle\caches\8.10.2\transforms\55845af9949d34561fcd4e540919d3bb\transformed\lifecycle-livedata-core-2.7.0\res
+com.example.tetrisclassic.app-jetified-core-ktx-1.12.0-15 C:\Users\tintu\.gradle\caches\8.10.2\transforms\571cb33b7fb3bd3947d8534e87a4ecfd\transformed\jetified-core-ktx-1.12.0\res
+com.example.tetrisclassic.app-jetified-activity-1.8.2-16 C:\Users\tintu\.gradle\caches\8.10.2\transforms\5a0c901cc071317cc9bcebd1c3c287df\transformed\jetified-activity-1.8.2\res
+com.example.tetrisclassic.app-jetified-lifecycle-runtime-ktx-2.7.0-17 C:\Users\tintu\.gradle\caches\8.10.2\transforms\5c4478208b03b386b9aa503544ca7a73\transformed\jetified-lifecycle-runtime-ktx-2.7.0\res
+com.example.tetrisclassic.app-jetified-material-icons-core-release-18 C:\Users\tintu\.gradle\caches\8.10.2\transforms\5e346239714802afa5c73d7446d9f51e\transformed\jetified-material-icons-core-release\res
+com.example.tetrisclassic.app-jetified-profileinstaller-1.3.0-19 C:\Users\tintu\.gradle\caches\8.10.2\transforms\5f2c47f8f83c369132a9289f38c6a506\transformed\jetified-profileinstaller-1.3.0\res
+com.example.tetrisclassic.app-jetified-lifecycle-viewmodel-ktx-2.7.0-20 C:\Users\tintu\.gradle\caches\8.10.2\transforms\67bcc5158dc1991c56bcdfc31bbb0db9\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\res
+com.example.tetrisclassic.app-jetified-savedstate-ktx-1.2.1-21 C:\Users\tintu\.gradle\caches\8.10.2\transforms\6c4a9121aa870606839af1f24ff01ad6\transformed\jetified-savedstate-ktx-1.2.1\res
+com.example.tetrisclassic.app-core-1.12.0-22 C:\Users\tintu\.gradle\caches\8.10.2\transforms\6d77ff9f9b44044f268df54e81d2636c\transformed\core-1.12.0\res
+com.example.tetrisclassic.app-jetified-ui-graphics-release-23 C:\Users\tintu\.gradle\caches\8.10.2\transforms\721996d31976e5dc1c69fb518337091a\transformed\jetified-ui-graphics-release\res
+com.example.tetrisclassic.app-jetified-customview-poolingcontainer-1.0.0-24 C:\Users\tintu\.gradle\caches\8.10.2\transforms\7930e7ee23da88ad61de070c699d562a\transformed\jetified-customview-poolingcontainer-1.0.0\res
+com.example.tetrisclassic.app-jetified-animation-core-release-25 C:\Users\tintu\.gradle\caches\8.10.2\transforms\79548055bb548ae40805e88fd7fdb8d7\transformed\jetified-animation-core-release\res
+com.example.tetrisclassic.app-jetified-activity-compose-1.8.2-26 C:\Users\tintu\.gradle\caches\8.10.2\transforms\7f60028b3fd02c46a5826ad2e2729852\transformed\jetified-activity-compose-1.8.2\res
+com.example.tetrisclassic.app-jetified-material-release-27 C:\Users\tintu\.gradle\caches\8.10.2\transforms\87409a765d3f829bcc059d7f461f40c7\transformed\jetified-material-release\res
+com.example.tetrisclassic.app-jetified-ui-geometry-release-28 C:\Users\tintu\.gradle\caches\8.10.2\transforms\90898fbd8252977e610b166a8651530d\transformed\jetified-ui-geometry-release\res
+com.example.tetrisclassic.app-lifecycle-runtime-2.7.0-29 C:\Users\tintu\.gradle\caches\8.10.2\transforms\a00a3a8be68c2443a977959d8dff2188\transformed\lifecycle-runtime-2.7.0\res
+com.example.tetrisclassic.app-jetified-activity-ktx-1.8.2-30 C:\Users\tintu\.gradle\caches\8.10.2\transforms\a95914d40374b551bcabda8c4c1cb75b\transformed\jetified-activity-ktx-1.8.2\res
+com.example.tetrisclassic.app-jetified-savedstate-1.2.1-31 C:\Users\tintu\.gradle\caches\8.10.2\transforms\aab2cdb712c50879576142e458a8aae5\transformed\jetified-savedstate-1.2.1\res
+com.example.tetrisclassic.app-jetified-ui-test-manifest-1.5.0-32 C:\Users\tintu\.gradle\caches\8.10.2\transforms\b625e657495ba8f65b54910194a604b8\transformed\jetified-ui-test-manifest-1.5.0\res
+com.example.tetrisclassic.app-jetified-emoji2-1.4.0-33 C:\Users\tintu\.gradle\caches\8.10.2\transforms\c6184a43a1ca376f6689378174cc299a\transformed\jetified-emoji2-1.4.0\res
+com.example.tetrisclassic.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-34 C:\Users\tintu\.gradle\caches\8.10.2\transforms\cb57e6cbc8e06e0012bc9ea6d68cfd70\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+com.example.tetrisclassic.app-jetified-ui-tooling-data-release-35 C:\Users\tintu\.gradle\caches\8.10.2\transforms\cea11a47d390ee8ccfeca8aee5e739de\transformed\jetified-ui-tooling-data-release\res
+com.example.tetrisclassic.app-jetified-ui-tooling-release-36 C:\Users\tintu\.gradle\caches\8.10.2\transforms\d28c139378f36190b7e34c0ea56eebe2\transformed\jetified-ui-tooling-release\res
+com.example.tetrisclassic.app-jetified-material3-1.1.1-37 C:\Users\tintu\.gradle\caches\8.10.2\transforms\d673dd3320e085a32f87fe2c8650822b\transformed\jetified-material3-1.1.1\res
+com.example.tetrisclassic.app-jetified-ui-release-38 C:\Users\tintu\.gradle\caches\8.10.2\transforms\da8ee43d20ae59ff308b7264e9a8fffd\transformed\jetified-ui-release\res
+com.example.tetrisclassic.app-jetified-ui-text-release-39 C:\Users\tintu\.gradle\caches\8.10.2\transforms\e935c8417fc6e7457265ee24213452ed\transformed\jetified-ui-text-release\res
+com.example.tetrisclassic.app-jetified-ui-unit-release-40 C:\Users\tintu\.gradle\caches\8.10.2\transforms\fcdd887a8320a4fb08681c4c6678ab44\transformed\jetified-ui-unit-release\res
+com.example.tetrisclassic.app-resValues-41 D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\build\generated\res\resValues\debug
+com.example.tetrisclassic.app-packageDebugResources-42 D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.tetrisclassic.app-packageDebugResources-43 D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.tetrisclassic.app-merged_res-44 D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\build\intermediates\merged_res\debug
+com.example.tetrisclassic.app-debug-45 D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\debug\res
+com.example.tetrisclassic.app-main-46 D:\Dokumen\My Data\Personal\Project\Game tetris\tetris ai 2\app\src\main\res

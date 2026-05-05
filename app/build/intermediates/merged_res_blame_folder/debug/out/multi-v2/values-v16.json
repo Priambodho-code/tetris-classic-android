@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.tetrisclassic.app-mergeDebugResources-43:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\tintu\\.gradle\\caches\\8.10.2\\transforms\\6d77ff9f9b44044f268df54e81d2636c\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}
